@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="icons/style.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+  </head>
+  <body>
+    <div class="wraper">
+      <div class="table">
+        <div class="plase">
+          <p>Место или названия отеля</p>
+          <div class="input-box">
+            <label class="icon-location2"></label>
+            <input
+              type="text"
+              placeholder="Ведите здесь место"
+              tabindex="1"
+              id="plaseInp"
+            />
+          </div>
+        </div>
+
+        <div class="box-inputCalend">
+          <div class="line"></div>
+          <div class="arrival">
+            <p>Заезд</p>
+            <div class="calendar-box">
+              <label class="icon-calendar" for="date"></label>
+              <input
+                type="text"
+                tabindex="2"
+                id="date"
+                placeholder="вибирите дату"
+              />
+            </div>
+          </div>
+          <div class="dot"></div>
+          <div class="departure">
+            <p>Виезд</p>
+            <div class="calendar-box">
+              <input
+                type="text"
+                tabindex="3"
+                id="date2"
+                placeholder="вибирите дату"
+              />
+              <label class="icon-keyboard_arrow_down" for="date2"></label>
+            </div>
+          </div>
+          <div class="line"></div>
+        </div>
+
+        <div class="numbers-container">
+          <div class="numbers">
+            <p>Номера</p>
+            <div class="number-box">
+              <input
+                type="number"
+                readonly
+                value="1"
+                tabindex="4"
+                id="number"
+              />
+              <label for="">
+                <i class="icon-triangle-up" id="up1"></i>
+                <i class="icon-triangle-down" id="down1"></i>
+              </label>
+            </div>
+          </div>
+
+          <div class="adult">
+            <p>Взрослие</p>
+            <div class="number-box">
+              <input type="number" readonly tabindex="5" id="adult" value="1"/>
+              <label for="">
+                <i class="icon-triangle-up" id="up2"></i>
+                <i class="icon-triangle-down" id="down2"></i>
+              </label>
+            </div>
+          </div>
+
+          <div class="child">
+            <p>Дети</p>
+            <div class="number-box">
+              <input type="number" readonly tabindex="6" id="child" value="0"/>
+              <label for="">
+                <i class="icon-triangle-up" id="up3"></i>
+                <i class="icon-triangle-down" id="down3"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="plus">
+          <button tabindex="7">+</button>
+        </div>
+        <div class="find">
+          <button id="findBtn">Найти</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

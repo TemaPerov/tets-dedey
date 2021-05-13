@@ -1,0 +1,225 @@
+.table {
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80%;
+  height: 100px;
+  -webkit-box-shadow: 0px 0px 20px #e3e7e7;
+  box-shadow: 0px 0px 20px #e3e7e7; }
+
+input {
+  border: none; }
+
+input:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 5px 10px #ec9814;
+  box-shadow: 0px 5px 10px #ec9814; }
+
+input:hover,
+label:hover {
+  cursor: pointer; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  padding: 0;
+  margin: 0 0 8px 0; }
+
+.plase {
+  padding: 0 20px 0 50px; }
+  .plase input {
+    width: 150px; }
+  .plase input::-webkit-input-placeholder {
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic; }
+  .plase input:-ms-input-placeholder {
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic; }
+  .plase input::-ms-input-placeholder {
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic; }
+  .plase input::placeholder {
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic; }
+
+.input-box label,
+.calendar-box label {
+  color: #ec9814; }
+
+.input-box label:last-child,
+.calendar-box label:last-child {
+  color: #8b9198; }
+
+.numbers,
+.adult,
+.child {
+  margin: 0 10px; }
+  .numbers input,
+  .adult input,
+  .child input {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #8b9198;
+    text-align: center;
+    color: #8b9198; }
+  .numbers input[type="number"]::-webkit-outer-spin-button,
+  .numbers input[type="number"]::-webkit-inner-spin-button,
+  .adult input[type="number"]::-webkit-outer-spin-button,
+  .adult input[type="number"]::-webkit-inner-spin-button,
+  .child input[type="number"]::-webkit-outer-spin-button,
+  .child input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; }
+  .numbers input[type="number"],
+  .numbers input[type="number"]:hover,
+  .numbers input[type="number"]:focus,
+  .adult input[type="number"],
+  .adult input[type="number"]:hover,
+  .adult input[type="number"]:focus,
+  .child input[type="number"],
+  .child input[type="number"]:hover,
+  .child input[type="number"]:focus {
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: textfield; }
+  .numbers i,
+  .adult i,
+  .child i {
+    font-size: 13px;
+    color: #8b9198; }
+  .numbers i:first-child,
+  .adult i:first-child,
+  .child i:first-child {
+    color: #ec9814; }
+
+.numbers-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.calendar-box input {
+  width: 100px; }
+
+.number-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .number-box label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+.box-inputCalend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.arrival,
+.departure {
+  margin: 0 15px; }
+  .arrival input,
+  .departure input {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic; }
+  .arrival input::-webkit-input-placeholder,
+  .departure input::-webkit-input-placeholder {
+    font-size: 12px;
+    font-style: italic; }
+  .arrival input:-ms-input-placeholder,
+  .departure input:-ms-input-placeholder {
+    font-size: 12px;
+    font-style: italic; }
+  .arrival input::-ms-input-placeholder,
+  .departure input::-ms-input-placeholder {
+    font-size: 12px;
+    font-style: italic; }
+  .arrival input::placeholder,
+  .departure input::placeholder {
+    font-size: 12px;
+    font-style: italic; }
+
+.line {
+  margin: auto 0;
+  height: 30px;
+  width: 1px;
+  background-color: #8b9198; }
+
+.dot {
+  width: 2px;
+  height: 2px;
+  background-color: #8b9198;
+  border-radius: 50%;
+  margin: auto 10px 10px 10px; }
+
+.plus button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fed18c;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center; }
+
+.plus button:hover {
+  cursor: pointer;
+  background-color: #ec9814; }
+
+.find {
+  margin: 0 10px; }
+  .find button {
+    width: 150px;
+    height: 50px;
+    background-color: #ec9814;
+    border: none;
+    color: white;
+    text-transform: uppercase; }
+  .find button:hover {
+    cursor: pointer;
+    background-color: #fed18c; }
+
+@media (max-width: 1100px) {
+  .table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    padding: 50px 0; }
+  .numbers-container, .box-inputCalend, .plus, .find, .plase {
+    margin: 10px 0;
+    padding: 0; }
+  .box-inputCalend {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .departure p, .arrival p, .plase p {
+    text-align: center; }
+  .line {
+    margin: 0 auto;
+    content: "";
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); } }
+
+@media (max-width: 1200px) {
+  .table {
+    width: 90%; } }
